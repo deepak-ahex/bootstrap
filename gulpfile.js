@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var imagemin = require ('gulp-imagemin');
 var uglify = require('gulp-uglify');
-var watch = require('gulp-watch');
+const { parallel } = require ('gulp')
 
 gulp.task('task-name', function() {
     // Required executing Stuff here
@@ -19,14 +19,14 @@ gulp.task('sass',function(){
     .pipe(gulp.dest('app/css'))  
 })
 
-const watchSass = require("gulp-watch-sass")
+// const watchSass = require("gulp-watch-sass")
 
-gulp.task("sass:watch", () => watchSass([
-    "./public/**/*.{scss,css}",
-    "!./public/libs/**/*"
-  ])
-    .pipe(sass())
-    .pipe(gulp.dest("./public")));
+// gulp.task("sass:watch", () => watchSass([
+//     "./public/**/*.{scss,css}",
+//     "!./public/libs/**/*"
+//   ])
+//     .pipe(sass())
+//     .pipe(gulp.dest("./public")));
 
 
     //copy all html files
@@ -43,17 +43,10 @@ gulp.task("sass:watch", () => watchSass([
     })
     //Minifying the js
     gulp.task('minify', ()=>{
-        gulp.src('app/js/*.js')
+        var stream = gulp.src('app/js/*.js')
         .pipe(uglify())
         .pipe(gulp.dest("dist/js"));
+        return stream;
     })
-    gulp.task('default',gulp.parallel(['imagemin','copyhtml','minify']))
-    //watching a file
-
-    gulp.task('watch', function () {
-        // Callback mode, useful if any plugin in the pipeline depends on the `end`/`flush` event
-        return watch('css/**/*.css', function () {
-            gulp.src('css/**/*.css')
-                .pipe(gulp.dest('build'));
-        });
-    });
+  
+    exports.build = parallel(minify,copyhtml);
