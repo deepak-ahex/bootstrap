@@ -1,0 +1,24 @@
+.div {
+  background-color: red;
+}
+
+col {
+  background-color: #202020;
+}
+
+.bg-black {
+  padding: 18px;
+  background-color: aqua;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+}
+
+@media (max-width: 575.98px) {
+  .media {
+    display: block;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

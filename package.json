@@ -6,7 +6,9 @@
   "dependencies": {
     "bootstrap": "^4.4.1",
     "gulp": "^4.0.2",
-    "gulp-watch-sass": "^1.4.1"
+    "gulp-watch-sass": "^1.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.1"
   },
   "devDependencies": {
     "gulp-imagemin": "^7.1.0",
