@@ -1,23 +1,9 @@
 @import 'variables';
-
-.div{
-    background-color: red;
-}
-col{
-    background-color: $bg-black;
-}
-.bg-black {
-    padding: 18px;
-    background-color: aqua;
-}
-img{
-    height: 50px;
-    width: 50px;
-}
+@import 'custom_styles'
 
 
-@media (max-width: 575.98px) {   
-    .media {
-         display: block;
-     } 
-    }
+
+
+// @media (max-width: 575.98px) {   
+    
+// }
