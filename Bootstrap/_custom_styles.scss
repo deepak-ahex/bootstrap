@@ -48,6 +48,8 @@ li{
         background-color: #080c14;
         color: #fff;
         padding: 20px 0px;
+        color: if( 1 + 1 == 2 , green , red);
+
         li{
             padding-top: 10px;
         }
@@ -58,7 +60,5 @@ li{
     .right-row-4{
         text-align: left;
     }
-    .sixth-row{
-        background-color: black;
-        height: 40vh;
-    }
+    
+    
