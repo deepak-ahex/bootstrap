@@ -48,11 +48,14 @@ li {
   padding-left: 30px;
 }
 
+.fifth-row {
+  padding: 40px;
+}
+
 .fourth-row {
   background-color: #080c14;
   color: #fff;
   padding: 20px 0px;
-  color: green;
 }
 .fourth-row li {
   padding-top: 10px;
@@ -64,11 +67,6 @@ li {
 
 .right-row-4 {
   text-align: left;
-}
-
-.sixth-row {
-  background-color: #694444;
-  height: 40vh;
 }
 
 /*# sourceMappingURL=style.css.map */

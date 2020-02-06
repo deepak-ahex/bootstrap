@@ -44,11 +44,14 @@ li{
         //  background-color: #a1101a;
      }
  }
+
+ .fifth-row {
+        padding: 40px;
+  }
     .fourth-row{
         background-color: #080c14;
         color: #fff;
         padding: 20px 0px;
-        color: if( 1 + 1 == 2 , green , red);
 
         li{
             padding-top: 10px;
@@ -60,5 +63,8 @@ li{
     .right-row-4{
         text-align: left;
     }
-    
-    
+    .sixth-row {
+        background-image: url(banner-22.jpg);
+        height: 40vh;
+        background-size: cover;
+      }
